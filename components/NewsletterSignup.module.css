@@ -1,0 +1,94 @@
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  padding: 1.5rem;
+  box-shadow: 0 12px 26px var(--shadow);
+}
+
+.copy {
+  display: grid;
+  gap: 0.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.eyebrow {
+  color: var(--wine);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.copy h3 {
+  font-size: clamp(1.7rem, 2vw, 2.3rem);
+  line-height: 1.15;
+  letter-spacing: -0.05em;
+}
+
+.form {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.field {
+  display: grid;
+  gap: 0.5rem;
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  background: var(--panel-alt);
+  border: 1px solid var(--border);
+  border-radius: 0.9rem;
+  padding: 0.8rem 0.9rem;
+  color: var(--ink);
+}
+
+.field textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.field input:focus,
+.field textarea:focus {
+  outline: 2px solid rgba(109, 45, 53, 0.2);
+  outline-offset: 2px;
+}
+
+.submit {
+  border: none;
+  border-radius: 999px;
+  background: var(--wine);
+  color: white;
+  padding: 0.9rem 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.submit:disabled {
+  opacity: 0.7;
+  cursor: wait;
+}
+
+.error,
+.success {
+  border-radius: 0.85rem;
+  padding: 0.8rem 1rem;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.error {
+  background: #f9e6e3;
+  color: #7a2a2a;
+}
+
+.success {
+  background: #eaf6ef;
+  color: var(--success);
+}

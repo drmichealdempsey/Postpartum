@@ -1,0 +1,52 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 2.9rem;
+  padding: 0.8rem 1.2rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  font-weight: 600;
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.sm {
+  min-height: 2.5rem;
+  padding: 0.65rem 0.95rem;
+  font-size: 0.9rem;
+}
+
+.md {
+  min-height: 2.9rem;
+  padding: 0.8rem 1.2rem;
+}
+
+.lg {
+  min-height: 3.25rem;
+  padding: 1rem 1.6rem;
+  font-size: 1rem;
+}
+
+.primary {
+  background: var(--wine);
+  color: white;
+  box-shadow: 0 12px 26px rgba(109, 45, 53, 0.18);
+}
+
+.secondary {
+  background: var(--rose-soft);
+  color: var(--wine);
+  border-color: rgba(109, 45, 53, 0.12);
+}
+
+.ghost {
+  background: transparent;
+  color: var(--ink);
+  border-color: var(--border);
+}

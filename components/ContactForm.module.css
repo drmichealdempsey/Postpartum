@@ -1,0 +1,50 @@
+.wrap {
+  width: 100%;
+}
+
+.form {
+  display: grid;
+  gap: 1rem;
+}
+
+.field {
+  display: grid;
+  gap: 0.45rem;
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  border: 1px solid var(--border);
+  background: var(--panel-alt);
+  border-radius: 0.9rem;
+  padding: 0.8rem 0.9rem;
+  color: var(--ink);
+}
+
+.field textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.submit {
+  border: none;
+  border-radius: 999px;
+  background: var(--wine);
+  color: white;
+  padding: 0.9rem 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.success {
+  margin-top: 1rem;
+  background: #eaf6ef;
+  color: var(--success);
+  border: 1px solid rgba(46, 111, 79, 0.12);
+  border-radius: 0.85rem;
+  padding: 0.9rem 1rem;
+}

@@ -1,0 +1,25 @@
+.card {
+  display: grid;
+  gap: 0.6rem;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.3rem;
+  box-shadow: 0 10px 20px var(--shadow);
+}
+
+.label {
+  color: var(--wine);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+}
+
+.card p {
+  color: var(--muted);
+}

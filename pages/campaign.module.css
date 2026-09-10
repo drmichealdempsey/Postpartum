@@ -1,0 +1,109 @@
+.hero {
+  padding: 4rem 1rem 2rem;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.section,
+.sectionAlt {
+  padding: 4rem 1rem;
+}
+
+.sectionAlt {
+  background: rgba(255, 255, 255, 0.38);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  padding: 1.3rem 1rem;
+  display: grid;
+  gap: 0.7rem;
+}
+
+.stage {
+  color: var(--wine);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+}
+
+.card p,
+.listPanel p,
+.goalPanel p,
+.transparency p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.goalGrid,
+.listGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.goalPanel,
+.listPanel,
+.transparency {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+}
+
+.goalPanel h3,
+.listPanel h3 {
+  margin-bottom: 0.65rem;
+}
+
+.transparency {
+  max-width: 56rem;
+}
+
+.partnerList {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.partnerList li {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 0.8rem;
+  padding: 1rem;
+  color: var(--muted);
+}
+
+@media (max-width: 960px) {
+  .grid,
+  .goalGrid,
+  .listGrid,
+  .partnerList {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .grid,
+  .goalGrid,
+  .listGrid,
+  .partnerList {
+    grid-template-columns: 1fr;
+  }
+}

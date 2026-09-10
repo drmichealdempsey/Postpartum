@@ -1,0 +1,25 @@
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.4rem;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.muted {
+  background: var(--panel-alt);
+}
+
+.value {
+  font-size: clamp(1.6rem, 2vw, 2.3rem);
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  color: var(--wine);
+}
+
+.label {
+  font-size: 0.9rem;
+  color: var(--muted);
+}

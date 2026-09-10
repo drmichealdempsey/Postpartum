@@ -1,0 +1,168 @@
+.section,
+.sectionAlt {
+  padding: 4rem 1rem;
+}
+
+.sectionAlt {
+  background: rgba(255, 255, 255, 0.38);
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.gridFour {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.featureCard {
+  padding: 1.4rem;
+}
+
+.featureCard h3 {
+  margin-bottom: 0.7rem;
+  font-size: 1.2rem;
+}
+
+.featureCard p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.editorial {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.timeline {
+  display: grid;
+  gap: 1rem;
+}
+
+.timelineItem {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.2rem 1rem;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.timelineItem span {
+  color: var(--wine);
+  font-weight: 700;
+}
+
+.timelineItem p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.caseStudy {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 1.2rem;
+}
+
+.caseText {
+  display: grid;
+  gap: 1rem;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  padding: 1.6rem;
+  color: var(--muted);
+}
+
+.callout {
+  display: grid;
+  gap: 0.8rem;
+  background: var(--rose-soft);
+  border: 1px solid rgba(109, 45, 53, 0.12);
+  border-radius: var(--radius-xl);
+  padding: 1.6rem;
+}
+
+.callout strong {
+  font-size: 1.4rem;
+  letter-spacing: -0.04em;
+}
+
+.callout span {
+  color: var(--muted);
+}
+
+.progressWrap {
+  max-width: 54rem;
+}
+
+.stageGrid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.stageCard {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.2rem 1rem;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.stageCard span {
+  color: var(--wine);
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.stageCard h3 {
+  font-size: 1.15rem;
+}
+
+.stageCard p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.quoteBox {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  padding: 2rem;
+  font-size: clamp(1.2rem, 1vw + 1rem, 1.8rem);
+  line-height: 1.5;
+  letter-spacing: -0.04em;
+}
+
+@media (max-width: 960px) {
+  .gridFour,
+  .stageGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .editorial,
+  .caseStudy {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .gridFour,
+  .stageGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .section,
+  .sectionAlt {
+    padding: 3rem 1rem;
+  }
+}

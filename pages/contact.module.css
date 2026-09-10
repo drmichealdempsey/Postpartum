@@ -1,0 +1,46 @@
+.hero {
+  padding: 4rem 1rem 2rem;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.section {
+  padding: 4rem 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 1.2rem;
+}
+
+.infoCard {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  padding: 1.8rem;
+}
+
+.infoCard h3 {
+  margin-bottom: 0.7rem;
+}
+
+.infoCard p,
+.infoCard li {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.infoCard ul {
+  margin: 1rem 0 0;
+  padding-left: 1.2rem;
+}
+
+@media (max-width: 760px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,34 @@
+.tier {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  padding: 1.1rem 0.8rem;
+  display: grid;
+  gap: 0.4rem;
+  justify-items: center;
+  cursor: pointer;
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.tier:hover,
+.tier:focus-visible {
+  transform: translateY(-1px);
+  border-color: var(--rose);
+}
+
+.selected {
+  background: var(--rose-soft);
+  border-color: var(--rose);
+  box-shadow: 0 12px 24px rgba(201, 125, 120, 0.14);
+}
+
+.amount {
+  font-weight: 700;
+  color: var(--wine);
+  font-size: 1.3rem;
+}
+
+.label {
+  color: var(--muted);
+  font-size: 0.85rem;
+}

@@ -1,0 +1,96 @@
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  padding: 1.5rem;
+  box-shadow: 0 12px 24px var(--shadow);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.eyebrow {
+  color: var(--wine);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.header h3 {
+  margin-top: 0.35rem;
+  font-size: 1.35rem;
+}
+
+.badge {
+  display: inline-flex;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  background: var(--rose-soft);
+  color: var(--wine);
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.amount {
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  line-height: 1;
+  letter-spacing: -0.06em;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.meta {
+  margin-top: 0.5rem;
+  color: var(--muted);
+}
+
+.barTrack {
+  margin-top: 1.5rem;
+  width: 100%;
+  height: 0.8rem;
+  border-radius: 999px;
+  background: #f0ebe8;
+  overflow: hidden;
+}
+
+.barFill {
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--rose), var(--wine));
+}
+
+.statsGrid {
+  margin-top: 1.4rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.statsGrid > div {
+  display: grid;
+  gap: 0.25rem;
+  padding-top: 0.5rem;
+}
+
+.statValue {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--ink);
+}
+
+.statLabel {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+@media (max-width: 620px) {
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
+}

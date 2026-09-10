@@ -1,0 +1,82 @@
+.footer {
+  background: #f3ece9;
+  border-top: 1px solid var(--border);
+  margin-top: 4rem;
+}
+
+.inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 3rem 1rem 1.5rem;
+  display: grid;
+  grid-template-columns: 1.8fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.brandBlock {
+  display: grid;
+  gap: 1rem;
+  color: var(--muted);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.brandMark {
+  display: inline-flex;
+  width: 2rem;
+  height: 2rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.75rem;
+  background: var(--wine);
+  color: white;
+}
+
+.column {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.column h3 {
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--wine);
+}
+
+.column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.55rem;
+  color: var(--muted);
+}
+
+.bottomBar {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1rem 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+  border-top: 1px solid rgba(31, 29, 29, 0.08);
+}
+
+@media (max-width: 760px) {
+  .inner {
+    grid-template-columns: 1fr;
+  }
+
+  .bottomBar {
+    flex-direction: column;
+  }
+}
