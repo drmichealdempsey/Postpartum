@@ -1,8 +1,33 @@
 .hero {
+  position: relative;
+  overflow: hidden;
   padding: 4rem 1rem 2rem;
+  background: rgba(19, 18, 18, 0.1);
+}
+
+.heroImage,
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+}
+
+.heroImage {
+  z-index: 0;
+}
+
+.heroBg {
+  object-fit: cover;
+  filter: saturate(0.9);
+}
+
+.heroOverlay {
+  z-index: 1;
+  background: linear-gradient(90deg, rgba(250,249,247,0.9), rgba(250,249,247,0.75), rgba(250,249,247,0.58));
 }
 
 .container {
+  position: relative;
+  z-index: 2;
   max-width: var(--max-width);
   margin: 0 auto;
 }
@@ -23,12 +48,19 @@
 }
 
 .tierCard {
-  background: var(--panel);
+  background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(247,240,237,0.95));
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   padding: 1.5rem 1rem;
   display: grid;
   gap: 0.75rem;
+  box-shadow: 0 10px 18px rgba(26,26,26,0.03);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.tierCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 24px rgba(26,26,26,0.08);
 }
 
 .amount {

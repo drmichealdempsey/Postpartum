@@ -1,0 +1,23 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#FAF9F7"/>
+  <g opacity="0.55">
+    <circle cx="120" cy="120" r="4" fill="#D8B6BF"/>
+    <circle cx="240" cy="210" r="4" fill="#D8B6BF"/>
+    <circle cx="370" cy="118" r="4" fill="#D8B6BF"/>
+    <circle cx="510" cy="210" r="4" fill="#D8B6BF"/>
+    <circle cx="640" cy="118" r="4" fill="#D8B6BF"/>
+    <circle cx="770" cy="210" r="4" fill="#D8B6BF"/>
+    <circle cx="920" cy="120" r="4" fill="#D8B6BF"/>
+    <circle cx="1050" cy="220" r="4" fill="#D8B6BF"/>
+    <circle cx="190" cy="420" r="4" fill="#A8B8A3"/>
+    <circle cx="330" cy="510" r="4" fill="#A8B8A3"/>
+    <circle cx="500" cy="430" r="4" fill="#A8B8A3"/>
+    <circle cx="670" cy="520" r="4" fill="#A8B8A3"/>
+    <circle cx="840" cy="420" r="4" fill="#A8B8A3"/>
+    <circle cx="1030" cy="520" r="4" fill="#A8B8A3"/>
+  </g>
+  <g opacity="0.35" stroke="#D7C7C2" stroke-width="2">
+    <path d="M70 650C200 610 260 560 370 620C480 680 600 660 730 590C860 520 960 540 1080 610"/>
+    <path d="M60 720C220 680 350 640 470 700C590 760 760 760 910 680C1010 620 1080 610 1130 630"/>
+  </g>
+</svg>

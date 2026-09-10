@@ -1,6 +1,8 @@
+import Image from 'next/image'
 import Head from 'next/head'
 import ContactForm from '@/components/ContactForm'
 import SectionHeading from '@/components/SectionHeading'
+import { images } from '@/lib/images'
 import styles from './contact.module.css'
 
 export default function ContactPage() {
@@ -12,6 +14,11 @@ export default function ContactPage() {
       </Head>
 
       <section className={styles.hero}>
+        <div className={styles.heroImage} aria-hidden="true">
+          <Image src={images.careSupport} alt="" fill sizes="100vw" className={styles.heroBg} />
+        </div>
+        <div className={styles.heroOverlay} aria-hidden="true" />
+
         <div className={styles.container}>
           <SectionHeading
             eyebrow="Contact"

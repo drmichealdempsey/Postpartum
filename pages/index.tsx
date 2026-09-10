@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Head from 'next/head'
 import Hero from '@/components/Hero'
 import SectionHeading from '@/components/SectionHeading'
@@ -6,6 +7,7 @@ import ImpactCard from '@/components/ImpactCard'
 import CampaignProgress from '@/components/CampaignProgress'
 import NewsletterSignup from '@/components/NewsletterSignup'
 import { campaign } from '@/lib/campaign'
+import { images } from '@/lib/images'
 import styles from './index.module.css'
 
 export default function HomePage() {
@@ -57,6 +59,37 @@ export default function HomePage() {
                   <p>{item.text}</p>
                 </div>
               ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.section}>
+        <div className={styles.container}>
+          <div className={styles.lindsayWrap}>
+            <div className={styles.lindsayImage}> 
+              <Image src={images.lindsaySupport} alt="Healthcare support and maternal care" width={700} height={520} />
+            </div>
+
+            <div className={styles.lindsayText}>
+              <SectionHeading
+                eyebrow="A case that changed the conversation"
+                title="The Lindsay Clancy case has become part of a national conversation about postpartum mental health, psychiatric care, and the systems surrounding new mothers."
+              />
+
+              <div className={styles.lindsayList}>
+                <p>It illustrates gaps we’re working to close:</p>
+                <ul>
+                  <li>Inadequate screening during postpartum care</li>
+                  <li>Limited access to mental health treatment</li>
+                  <li>Misunderstanding of postpartum psychosis symptoms</li>
+                  <li>Legal and criminal justice system response to maternal mental health crisis</li>
+                </ul>
+                <p>
+                  This campaign focuses on preventing future tragedies by funding better screening protocols, treatment access, research on prevention, and advocacy for women in crisis.
+                </p>
+                <a href="/campaign" className={styles.linkButton}>Read full campaign context</a>
+              </div>
             </div>
           </div>
         </div>

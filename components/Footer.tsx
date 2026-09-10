@@ -5,6 +5,8 @@ import styles from './Footer.module.css'
 export default function Footer() {
   return (
     <footer className={styles.footer}>
+      <div className={styles.pattern} aria-hidden="true" />
+
       <div className={styles.inner}>
         <div className={styles.brandBlock}>
           <div className={styles.brand}>

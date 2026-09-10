@@ -1,7 +1,21 @@
 .footer {
-  background: #f3ece9;
+  position: relative;
+  background: linear-gradient(180deg, #f7f0ed, #efe3e0);
   border-top: 1px solid var(--border);
   margin-top: 4rem;
+  overflow: hidden;
+}
+
+.pattern {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top left, rgba(139,71,87,0.08), transparent 30%), linear-gradient(180deg, transparent, rgba(255,255,255,0.28));
+}
+
+.inner,
+.bottomBar {
+  position: relative;
+  z-index: 1;
 }
 
 .inner {

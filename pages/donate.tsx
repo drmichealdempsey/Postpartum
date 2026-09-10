@@ -1,8 +1,10 @@
+import Image from 'next/image'
 import Head from 'next/head'
 import Link from 'next/link'
 import Button from '@/components/Button'
 import SectionHeading from '@/components/SectionHeading'
 import { campaign } from '@/lib/campaign'
+import { images } from '@/lib/images'
 import styles from './donate.module.css'
 
 export default function DonatePage() {
@@ -14,6 +16,11 @@ export default function DonatePage() {
       </Head>
 
       <section className={styles.hero}>
+        <div className={styles.heroImage} aria-hidden="true">
+          <Image src={images.donateHope} alt="" fill sizes="100vw" className={styles.heroBg} />
+        </div>
+        <div className={styles.heroOverlay} aria-hidden="true" />
+
         <div className={styles.container}>
           <SectionHeading
             eyebrow="Give today"

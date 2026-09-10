@@ -1,10 +1,24 @@
 import Image from 'next/image'
 import Button from './Button'
+import { images } from '@/lib/images'
 import styles from './Hero.module.css'
 
 export default function Hero() {
   return (
     <section className={styles.hero}>
+      <div className={styles.imageWrap} aria-hidden="true">
+        <Image
+          src={images.hero}
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className={styles.backgroundImage}
+        />
+      </div>
+
+      <div className={styles.overlay} aria-hidden="true" />
+
       <div className={styles.content}>
         <div className={styles.copy}>
           <p className={styles.eyebrow}>A care-first campaign</p>
@@ -20,7 +34,7 @@ export default function Hero() {
 
         <div className={styles.visual}>
           <div className={styles.cardFrame}>
-            <Image src="/hero-illustration.svg" alt="Illustration of support for postpartum care" width={560} height={420} priority />
+            <Image src={images.careSupport} alt="Supportive care and family wellbeing" width={560} height={420} priority />
           </div>
         </div>
       </div>

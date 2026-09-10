@@ -1,7 +1,9 @@
+import Image from 'next/image'
 import Head from 'next/head'
 import SectionHeading from '@/components/SectionHeading'
 import Card from '@/components/Card'
 import { campaign } from '@/lib/campaign'
+import { images } from '@/lib/images'
 import styles from './impact.module.css'
 
 export default function ImpactPage() {
@@ -13,6 +15,11 @@ export default function ImpactPage() {
       </Head>
 
       <section className={styles.hero}>
+        <div className={styles.heroImage} aria-hidden="true">
+          <Image src={images.impactPattern} alt="" fill sizes="100vw" className={styles.heroBg} />
+        </div>
+        <div className={styles.heroOverlay} aria-hidden="true" />
+
         <div className={styles.container}>
           <SectionHeading
             eyebrow="Impact areas"
